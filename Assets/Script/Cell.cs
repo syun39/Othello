@@ -48,6 +48,11 @@ public class Cell : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// タイルのプロパティ。
+    /// </summary>
+    public Tile Tile => _tile;
+
     private void OnValidate()
     {
         OnStateChanged();
