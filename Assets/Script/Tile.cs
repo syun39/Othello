@@ -18,7 +18,12 @@ public enum TileState
     /// <summary>
     /// ここに石を置ける。
     /// </summary>
-    Placeable
+    Placeable,
+
+    /// <summary>
+    /// 石を置ける場所を選択中
+    /// </summary>
+    PlaceableSelected
 }
 
 
@@ -35,6 +40,8 @@ public class Tile : MonoBehaviour
 
     [SerializeField]
     private Material _placeableMaterial = null; // 石を置ける
+
+    [SerializeField]　private Material _placeableSelectedMaterial = null; // 石を置ける場所を選択中
 
     [SerializeField]
     private TileState _state;
@@ -70,6 +77,7 @@ public class Tile : MonoBehaviour
                 TileState.None => _noneMaterial,
                 TileState.Selected => _selectedMaterial,
                 TileState.Placeable => _placeableMaterial,
+                TileState.PlaceableSelected => _placeableSelectedMaterial,
                 _ => null
             };
         }

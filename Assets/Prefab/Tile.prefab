@@ -121,4 +121,5 @@ MonoBehaviour:
   _noneMaterial: {fileID: 2100000, guid: afebc44fd39a37f4e841afce36fc43cd, type: 2}
   _selectedMaterial: {fileID: 2100000, guid: 5143d6fa6a844e44fb0a7525043052db, type: 2}
   _placeableMaterial: {fileID: 2100000, guid: 4f95f3f5538306a4c9542e8bc4456a8a, type: 2}
+  _placeableSelectedMaterial: {fileID: 2100000, guid: 38096064cf2a598458c6feb234c2f216, type: 2}
   _state: 0
